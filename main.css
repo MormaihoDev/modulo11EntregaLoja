@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container, .sobre, section h2, #produtos, #sobre, .container-flex li img {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html {
+    overflow-x: hidden
+}
+
+header {
+    background-color: #f7f7f7;
+    padding: 20px 0px;
+    
+}
+
+header h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+nav, .carrinho img {
+    margin-left: 50%;
+}
+
+.carrinho img {
+    position: static;
+}
+
+.container-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+}
+
+#produtos .container-flex li img {
+    height: 300px;
+    width: 300px;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin: 0 8px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 3px 3px;
+}
+
+.container img {
+    height: 50px;
+}
+
+.container li a {
+    text-decoration: none;
+}
+
+#carousel-imagens img {
+    height: 500px;
+}
+
+#produtos h2, #sobre h2 {
+    border-bottom: 3px solid #f7f7f7;
+    border-radius: 5px;
+}
+
+#produtos .sobre, #sobre .sobre {
+    display: flex;
+}
+
+#produtos img, #sobre img {
+    height: 500px;
+    margin: 32px 0 8px 0;
+}
+
+.sobre .p {
+    margin: 32px 16px;
+}
+
+.container-flex {
+    list-style: none;
+}
+
+.rodape {
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container, .sobre, section h2, #produtos, #sobre, .container-flex li img {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav, .carrinho img {
+        margin-left: 20%;
+    }
+
+    #carousel-imagens img {
+        height: 310px;
+    }
+
+    #produtos img, #sobre img {
+        height: 300px;
+        margin: 32px 0 8px 0;
+    }
+    #sobre .pAMais {
+        display: none;
+    }
+
+    #produtos .container-flex li img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #produtos button {
+        padding: 15px 40px;
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container, .sobre, section h2, #produtos, #sobre, .container-flex li img {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .container img {
+        height: 40px;
+    }
+
+    .container li a {
+        font-size: 15px;
+    }
+
+    .container li {
+        float: right;
+    }
+
+    nav li {
+        display: block;
+        list-style: none;
+        border: 1px solid blue;
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin: 3px 0;
+    }
+
+    #carousel-imagens img {
+        height: 150px;
+    }
+    
+    nav, .carrinho img {
+        margin-left: 2%;
+    }
+
+    #produtos img, #sobre img {
+        height: 200px;
+        margin: 32px 0 0px 8%;
+        
+    }
+
+    .container-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 1%;
+    }
+
+    #sobre .pAMais {
+        display: none;
+    }
+
+    #sobre p {
+        font-size: 15px;
+    }
+
+    #produtos .container-flex li img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #produtos .sobre, #sobre .sobre {
+        display: block;
+    }
+
+    #produtos button {
+        padding: 15px 40px;
+        position: relative;
+        left: 5%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .container-flex p {
+        font-size: 15px;
+    }
+
+    footer .rodape {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav li:hover, nav li a:hover {
+        background-color: blue;
+        color: red;
+        font-weight: bold;
+    }
+}
